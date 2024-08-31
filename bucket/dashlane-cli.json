@@ -1,0 +1,26 @@
+{
+    "version": "v6.2432.0",
+    "description": "Dashlane CLI - A command-line interface for Dashlane",
+    "homepage": "https://github.com/Dashlane/dashlane-cli",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Dashlane/dashlane-cli/releases/download/v6.2432.0/dcli-win-x64.exe"
+        }
+    },
+    "bin": "dcli.exe",
+    "shortcuts": [
+        [
+            "dcli.exe",
+            "dcli"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Dashlane/dashlane-cli/releases/download/$version/dcli-win-x64.exe"
+            }
+        }
+    }
+}
