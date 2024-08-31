@@ -5,7 +5,12 @@
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Dashlane/dashlane-cli/releases/download/v6.2432.0/dcli-win-x64.exe"
+            "url": "https://github.com/Dashlane/dashlane-cli/releases/download/v6.2432.0/dcli-win-x64.exe",
+            "installer": {
+                "script": [
+                    "Rename-Item \"$dir\\dcli-win-x64.exe\" \"dcli.exe\""
+                ]
+            }
         }
     },
     "bin": "dcli.exe",
